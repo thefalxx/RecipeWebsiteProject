@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Beef Stroganoff | FoodVille</title>
+</head>
+<body>
+    <section>
+        <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 w-full">
+            <div class="container flex flex-wrap items-center justify-between mx-auto">
+            <div class="flex items-center">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">FoodVille</span>
+            </div>
+            <div class="flex md:order-2">
+              <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
+                <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Search</span>
+              </button>
+              <div class="relative hidden md:block">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                  <span class="sr-only">Search icon</span>
+                </div>
+                <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+              </div>
+              <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
+                <span class="sr-only">Open menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+              </button>
+            </div>
+              <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+                <div class="relative mt-3 md:hidden">
+                  <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                  </div>
+                  <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+                </div>
+                <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                  <li>
+                    <a href="../dist/index.html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="../dist/index.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a href="../dist/index.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                      Recipes
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav> 
+    </section>
+
+    <!-- <section>
+        
+        <div class="grid gap-4">    
+          <img class="h-auto max-w-auto bg-center" src="../image/beefstrogpage.jpg" alt=""> 
+        </div>
+    </section> -->
+
+    <!-- <section id="Recipes" class="bg-cover h-screen px-5 pt-25 bg-white">
+      <p class="text-5xl font-bold md:text-8xl text-blue-600 pl-100 text-center pt-10 pb-2">
+        Beef Stroganoff Recipe
+      </p>
+
+      <h4></h4>
+
+      <div>
+        <img class="h-auto max-w-lg ml-auto" src="../image/rawbeefimg.jpg" alt="">
+      </div>
+
+      <div class="flex flex-1 flex-col items-center lg:items-start overflow-hidden">
+        <h2 class="bg-clip-text  text-blue-600 font-bold text-xl md:text-4 lg:text-6xl text-center lg:text-center mb-2 py-2 pl-10">
+            Recipe and Procedure:
+        </h2>
+      </div> -->
+
+      <!-- <div class="mb-5"> Video Procedure
+        <div class="px-5 h-96 md:w-full md:h-screen pl-10">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/HeeUQZ0fDBs" title="YouTube video player" 
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <div>
+        <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+          <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        </a>
+      </div>
+
+
+    
+
+    </section> -->
+
+
+<body class="font-body">
+
+    <div class="page-bg md:flex md:h-1/2"> <!--Description-->
+        <!-- <p class="text-5xl font-bold md:text-8xl text-blue-600 pl-100 text-center pt-10 pb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500">
+          Beef Stroganoff Recipe
+        </p> -->
+        <img src="../image/beefstrogpage.jpg" alt=" " class="h-full md:px-5 md:py-5 md:w-11/12 md:h-halfScreen object-position: center; pt-10">
+        <div class="list">
+          <p class="text-5xl font-bold md:text-8xl text-blue-600 pl-100 text-center pt-10 pb-5 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500">
+            Classic Beef Stroganoff
+          </p>
+            <span class="block px-5 text-black pt-10 text-justify"><span class="font-bold">Beef Stroganoff</span> is a popular Russian dish of small pieces of beef fillet sautéed in sour cream 
+                sauce together with onions and mushrooms. The dish was named after Count Alexander Grigorievich Stroganoff, 
+                who lived in the late 19th century in Odessa.
+                <br>
+                <br>
+                In Russia, you will most often find traditional beef stroganoff served over fried shoestring potatoes (French fries). 
+                It can also be found served over mashed potatoes or rice. In the United States, pasta is the most common accompaniment to 
+                beef stroganoff, particularly twisted egg noodles. But here in the Philippines, it is usually served on top of a
+                hot-steamed rice.
+            </span>
+        </div>
+    </div>
+
+    <div class="mb-5"> <!--Video Procedure-->
+        <h1 class="font-bold text-6xl px-5 py-5 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500">
+          Procedures / Tutorials
+        </h1>
+        <div class="px-5 h-96 md:w-full md:h-screen">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HeeUQZ0fDBs" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+        </div>
+    </div>
+    
+    <div class="list"> <!--Ingredients-->
+        <div>
+            <h1 class="font-bold text-6xl px-5 py-5  text-blue-600 pl-100 text-center pt-10 pb-5 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500">
+             Ingredients</h1>
+        </div>
+        <div class="bg-gray-200 p-4 rounded">
+          <ul class="list-disc list-inside grid md:grid-cols-4">
+            <li>1 1/2 pounds beef sirloin steak, 1/2 inch thick cut</li>
+            <li>8 ounces fresh mushrooms, sliced (2 1/2 cups)</li>
+            <li>2 medium onions, thinly sliced</li>
+            <li>1/4 cup butter</li>
+            <li>1 1/2 cups Progresso™ beef flavored broth</li>
+            <li>1/2 teaspoon salt</li>
+            <li>1 teaspoon Worcestershire sauce</li>
+            <li>1/4 cup Gold Medal™ all-purpose flour</li>
+            <li>1 1/2 cups sour cream</li>
+            <li>1 serving of: rice, pasta, or fries</li>
+            
+          </ul>
+        </div>
+    </div>
+
+    <div class="list"> <!--procedure-->
+      <div>
+          <h1 class="font-bold text-6xl px-5 py-5  text-blue-600 pl-100 text-center pt-10 pb-5 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500">
+            Procedure
+          </h1>
+      </div>
+      <div class="bg-gray-200 p-4">
+        <ul class="list-disc list-inside grid md:grid-cols-2 ">
+          <li>Cut beef across grain into about 1 1/2x1/2-inch strips.</li>
+          <li>Cook mushrooms, onions and garlic in butter in 10-inch skillet over medium heat, 
+            <br>
+            stirring occasionally, until onions are tender; remove from skillet.</li>
+          <li>Cook beef in same skillet until brown. Stir in 1 cup of the broth, the salt and Worcestershire sauce. 
+            <br>
+            Heat to boiling; reduce heat. Cover and simmer 15 minutes.</li>
+          <li>Stir remaining 1/2 cup broth into flour; stir into beef mixture. Add onion mixture; heat to boiling,
+            <br>
+             stirring constantly. Boil and stir 1 minute. Stir in sour cream; heat until hot (do not boil).</li>
+          <li>Serve while still hot!</li>
+
+          
+        </ul>
+      </div>
+  </div>
+
+    <footer class="page-footer  dark:bg-gray-900 text-white"> <!--Footer-->
+        <p class="text-center">FoodVille</p>
+        <p class="text-center">© 2023 FoodVille | Ton Fuerzas. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+
+</html>
+
+<!--how to put list inside a box tailwind css-->
+
+    
+</body>
+</html>

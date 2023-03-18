@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pork Bites | FoodVille</title>
+</head>
+<body>
+    <section>
+        <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 w-full">
+            <div class="container flex flex-wrap items-center justify-between mx-auto">
+            <div class="flex items-center">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">FoodVille</span>
+            </div>
+            <div class="flex md:order-2">
+              <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
+                <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Search</span>
+              </button>
+              <div class="relative hidden md:block">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                  <span class="sr-only">Search icon</span>
+                </div>
+                <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+              </div>
+              <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
+                <span class="sr-only">Open menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+              </button>
+            </div>
+              <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+                <div class="relative mt-3 md:hidden">
+                  <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                  </div>
+                  <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+                </div>
+                <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                  <li>
+                    <a href="../dist/index.html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="../dist/index.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a href="../dist/index.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                      Recipes
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav> 
+    </section>
+
+    <body class="font-body">
+
+        <div class="page-bg md:flex md:h-1/2"> <!--Description-->
+            <!-- <p class="text-5xl font-bold md:text-8xl text-blue-600 pl-100 text-center pt-10 pb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500">
+              Pork Bites
+            </p> -->
+            <img src="../image/porkbitesdish-removebg-preview.png" alt=" " class="h-full md:px-5 md:py-5 md:w-11/12 md:h-halfScreen object-position: center; pt-10">
+            <div class="list">
+              <p class="text-5xl font-bold md:text-8xl text-blue-600 pl-100 text-center pt-10 pb-5 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500">
+                Pork Bites
+              </p>
+                <span class="block px-5 text-black pt-10 text-justify"><span class="font-bold"> Pork Bites</span> are 
+                    cubed seasoned pork chops that are pan-seared and then smothered in a creamy garlic sauce. 
+                    Pork Bites are hearty enough for the main course. Serve them with a side of mashed potatoes and green beans or 
+                    asparagus for a complete and satisfying meal. Pork chops are cubed, seasoned with onion powder, salt, and pepper, and pan-seared. Then, the creamy garlic sauce is made. The pork is added to the sauce and is delicious just like that or over a plate of pasta.
+                
+                </span>
+            </div>
+        </div>
+    
+        <div class="mb-5"> <!--Video Procedure-->
+            <h1 class="font-bold text-6xl px-5 py-5 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500">
+              Procedures / Tutorials
+            </h1>
+            <div class="px-5 h-96 md:w-full md:h-screen">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3RA4DghJ1MM" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+            </div>
+        </div>
+        
+        <div class="list"> <!--Ingredients-->
+            <div>
+                <h1 class="font-bold text-6xl px-5 py-5  text-blue-600 pl-100 text-center pt-10 pb-5 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500">
+                 Ingredients</h1>
+            </div>
+            <div class="bg-gray-200 p-4 rounded">
+              <ul class="list-disc list-inside grid md:grid-cols-4">
+                <li>1 tbsp olive oil</li>
+                <li>500g pkt Coles Pork Belly Bites</li>
+                <li>1 tbsp soy sauce</li>
+                <li>1 tbsp honey</li>
+                <li>1 garlic clove/li>
+                <li>2 tsp finely grated ginger</li>
+                <li>1 spring onion, thinly sliced</li>
+     
+              </ul>
+            </div>
+        </div>
+    
+        <div class="list"> <!--procedure-->
+          <div>
+              <h1 class="font-bold text-6xl px-5 py-5  text-blue-600 pl-100 text-center pt-10 pb-5 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500">
+                Procedure
+              </h1>
+          </div>
+          <div class="bg-gray-200 p-4">
+            <ul class="list-disc list-inside grid md:grid-cols-4">
+              <li>Heat the oil in a large frying pan over high heat. Cook pork, turning, for 5 mins or until golden and heated through.</li>
+              <li>Add the soy sauce, sweet chilli sauce, honey, garlic and ginger to the pan. Cook, tossing, 
+                <br>
+                for 3-5 mins or until the pork is coated in sauce and the sauce is sticky. 
+                </li>
+              <li>Arrange the pork on a serving plate. Drizzle with a little sauce and sprinkle with spring onion </li>
+              <li>Serve immediately, garnished with chili, if desired.</li>
+            </ul>
+          </div>
+      </div>
+    
+        <footer class="page-footer  dark:bg-gray-900 text-white"> <!--Footer-->
+            <p class="text-center">FoodVille</p>
+            <p class="text-center">© 2023 FoodVille | Ton Fuerzas. All Rights Reserved.</p>
+        </footer>
+        
+
+    </body>
+</html>
